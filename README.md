@@ -8,8 +8,17 @@
   React Native Shadow Generator to quickly generate shadow of your components. Builded by <a href="https://dotmind.io/" target="_blank">.mind.io</a>
 </p>
 <p align="center">
+  <a href="https://github.com/dotmind/rn-shadow-generator">
+    <img src="https://img.shields.io/npm/v/@dotmind/rn-shadow-generator" />
+  </a>
   <a href="https://codecov.io/gh/dotmind/rn-shadow-generator">
     <img src="https://codecov.io/gh/dotmind/rn-shadow-generator/branch/master/graph/badge.svg?token=FBX6GCYOQF"/>
+  </a>
+  <a href="https://github.com/dotmind/rn-shadow-generator">
+    <img src="https://img.shields.io/github/license/dotmind/rn-shadow-generator" />
+  </a>
+  <a href="https://github.com/dotmind/rn-shadow-generator">
+    <img src="https://img.shields.io/npm/types/typescript" />
   </a>
 </p>
 
