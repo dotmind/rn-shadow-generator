@@ -11,13 +11,13 @@
     "build": "tsc --project ./tsconfig.json",
     "pub": "npm version patch && publish --registry http://localhost:4873/",
     "lint": "tslint --fix -p ./tsconfig.json",
-    "test": "jest --coverage"
+    "test": "jest"
   },
   "author": "Anthony Lasserre (.mind)",
   "license": "MIT",
   "jest": {
-    "collectCoverage": true,
-    "coverageReporters": ["html"]
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
   },
   "devDependencies": {
     "@babel/preset-env": "^7.13.15",
