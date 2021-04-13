@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="./examples/dotmind-logo-white.png" width="100" />
+  <img alt="Logo" src="./examples/dotmind-logo.png" width="100" />
 </div>
 <h1 align="center">
   @dotmind/rn-shadow-generator
@@ -8,10 +8,10 @@
   React Native Shadow Generator to quickly generate shadow of your components. Builded by <a href="https://dotmind.io/" target="_blank">.mind.io</a>
 </p>
 <p align="center">
-
+  <a href="https://codecov.io/gh/dotmind/rn-shadow-generator">
+    <img src="https://codecov.io/gh/dotmind/rn-shadow-generator/branch/master/graph/badge.svg?token=FBX6GCYOQF"/>
+  </a>
 </p>
-
-React Native Shadow Generator is a tool to quickly generate your shadow's Components. Tool builded by [.mind](https://github.com/dotmind) team.
 
 ![preview](./examples/preview.png)
 
