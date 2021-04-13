@@ -47,15 +47,14 @@ const adjustShadowOffsetOnDirection = (level: number, direction: DirectionType) 
  * @param {string} shadowColor Shadow color you want to set (default to Black)
  * @returns {ShadowType} a full shadow object that depends on OS (iOS or Android)
  */
-const generateShadow = ({
-  level = 4,
-  shadowColor = '#000',
-  direction = 'bottom',
-}: {
+const generateShadow = (params?: {
   level?: number,
   shadowColor?: string,
   direction?: DirectionType,
 }): ShadowType => {
+  const level = params?.level || 4;
+  const shadowColor = params?.shadowColor || '#000';
+  const direction = params?.direction || 'bottom';
   const shadowOffset = adjustShadowOffsetOnDirection(level, direction);
   const shadowOpacity = Number(interpolate(level, 1, 24, 0.2, 0.6).toFixed(2));
   const shadowRadius = Number(interpolate(level, 1, 38, 1, 16).toFixed(2));
