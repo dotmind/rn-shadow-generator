@@ -1018,6 +1018,12 @@
     "exec-sh" "^0.3.2"
     "minimist" "^1.2.0"
 
+"@dotmind/rn-shadow-generator@file:":
+  "resolved" "file:"
+  "version" "1.0.2"
+  dependencies:
+    "@dotmind/rn-shadow-generator" "file:"
+
 "@hapi/hoek@^9.0.0":
   "integrity" "sha512-CAEbWH7OIur6jEOzaai83jq3FmKmv4PmX1JYfs9IrYcGEVI/lyL1EXJGCj7eFVJ0bg5QR8LMxBlEtA+xKiLpFw=="
   "resolved" "https://registry.npmjs.org/@hapi/hoek/-/hoek-9.1.1.tgz"

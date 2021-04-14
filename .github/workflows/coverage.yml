@@ -19,7 +19,7 @@ jobs:
       run: npm install
 
     - name: Link local npm package
-      run: npm link; npm link @dotmind/rn-shadow-generator
+      run: npm link; cd src/ && npm link @dotmind/rn-shadow-generator
 
     - name: Run the tests
       run: npm test -- --coverage
