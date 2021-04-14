@@ -2,7 +2,18 @@
   "name": "@dotmind/rn-shadow-generator",
   "version": "1.0.2",
   "description": "React Native Shadow Generator is a tool to quickly generate your shadow's Components. Tool builded by .mind team.",
-  "keywords": ["dotmind", "shadow", "generator", "react-native", "react", "native", "ios", "android", "js", "javascript"],
+  "keywords": [
+    "dotmind",
+    "shadow",
+    "generator",
+    "react-native",
+    "react",
+    "native",
+    "ios",
+    "android",
+    "js",
+    "javascript"
+  ],
   "homepage": "https://github.com/dotmind/rn-shadow-generator",
   "repository": {
     "type": "git",
