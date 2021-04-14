@@ -717,9 +717,8 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@dotmind/rn-shadow-generator@../../dotmind-rn-shadow-generator-v1.0.0.tgz":
-  version "1.0.0"
-  resolved "../../dotmind-rn-shadow-generator-v1.0.0.tgz#2065b12fef84c03cce83cd469a529520b1ee377e"
+"@dotmind/rn-shadow-generator@../../lib":
+  version "0.0.0"
 
 "@eslint/eslintrc@^0.4.0":
   version "0.4.0"

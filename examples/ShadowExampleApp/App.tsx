@@ -8,7 +8,7 @@
  * @format
  */
 
-import React, {useCallback} from 'react';
+import React, {useCallback, useEffect} from 'react';
 import {
   FlatList,
   ScrollView,
@@ -17,8 +17,9 @@ import {
   useColorScheme,
   View,
   Image,
+  LogBox,
 } from 'react-native';
-import {ShadowView, DirectionType} from '@dotmind/rn-shadow-generator';
+import {DirectionType, ShadowView} from '@dotmind/rn-shadow-generator';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 
@@ -98,6 +99,10 @@ const Header = () => {
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
+  useEffect(() => {
+    LogBox.ignoreLogs(['VirtualizedLists should never be nested']);
+  }, []);
+
   const backgroundStyle = {
     flex: 1,
     backgroundColor: isDarkMode ? Colors.black : Colors.white,
@@ -106,17 +111,16 @@ const App = () => {
   const _renderItem = useCallback(
     ({
       item: {level, shadowColor, direction},
-      index,
     }: {
       item: ItemType;
       index: number;
     }) => {
       return (
         <ShadowView
-          key={index}
           level={level}
           shadowColor={shadowColor}
-          direction={direction}>
+          direction={direction}
+          style={styles.shadowContainer}>
           <Text style={styles.propsTypeLabel}>
             Level <Text style={styles.valueLabel}>{level}</Text>
           </Text>
@@ -135,6 +139,8 @@ const App = () => {
           renderItem={_renderItem}
           numColumns={3}
           contentContainerStyle={styles.flatListContentContainer}
+          keyExtractor={(_, index) => index.toString()}
+          scrollEnabled={false}
         />
       </Section>
       <Section title={'Other Shadow Color'}>
@@ -144,6 +150,8 @@ const App = () => {
           renderItem={_renderItem}
           numColumns={3}
           contentContainerStyle={styles.flatListContentContainer}
+          keyExtractor={(_, index) => index.toString()}
+          scrollEnabled={false}
         />
       </Section>
       <Section title={'Basic Direction (iOS only)'}>
@@ -153,6 +161,8 @@ const App = () => {
           renderItem={_renderItem}
           numColumns={3}
           contentContainerStyle={styles.flatListContentContainer}
+          keyExtractor={(_, index) => index.toString()}
+          scrollEnabled={false}
         />
       </Section>
       <Section title={'Other Direction (iOS only)'}>
@@ -162,6 +172,8 @@ const App = () => {
           renderItem={_renderItem}
           numColumns={3}
           contentContainerStyle={styles.flatListContentContainer}
+          keyExtractor={(_, index) => index.toString()}
+          scrollEnabled={false}
         />
       </Section>
     </ScrollView>
@@ -227,6 +239,16 @@ const styles = StyleSheet.create({
   codeSectionLabel: {
     fontFamily: 'Avenir Next',
     color: 'black',
+  },
+  shadowContainer: {
+    margin: 20,
+    marginBottom: 30,
+    marginTop: 0,
+    height: 50,
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 5,
   },
 });
 

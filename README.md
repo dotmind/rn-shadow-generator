@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="./examples/dotmind-logo.png" width="100" />
+  <img alt="Logo" src="https://github.com/dotmind/rn-shadow-generator/raw/master/examples/dotmind-logo.png" width="100" />
 </div>
 <h1 align="center">
   @dotmind/rn-shadow-generator
@@ -22,20 +22,23 @@
   </a>
 </p>
 
-![preview](./examples/preview.png)
+![preview](https://raw.githubusercontent.com/dotmind/rn-shadow-generator/master/examples/preview.png)
 
 ## Menu
 
-* [🚀  Roadmap](#-roadmap)
-* [💻  Installation](#️-installation)
-* [👷‍♂️  How it's work](#️-how-its-work)
-* [⚡️  Contributing](#-contributing)
-* [🔐  Licence](#-contributing)
+- [Menu](#menu)
+- [🚀 Roadmap](#-roadmap)
+- [💻 Installation](#-installation)
+- [👷‍♂️ How it's work](#️-how-its-work)
+  - [ShadowView usage](#shadowview-usage)
+  - [generateShadow usage](#generateshadow-usage)
+- [🧪 Example app](#-example-app)
+- [⚡️ Contributing](#️-contributing)
+- [🔐 License](#-license)
 
 ## 🚀 Roadmap
 
-* [ ] Android full compatibility (direction support)
-* [ ] Pressable component animated
+* [ ] Android full compatibility (shadowOffset support)
 
 ## 💻 Installation
 
@@ -71,6 +74,7 @@ const MyCustomComponent = () => {
     </ShadowView>
   );
 }
+
 ```
 
 | props | description | required | default value |
@@ -101,9 +105,10 @@ const MyCustomComponent = () => {
     </View>
   );
 }
+
 ```
 
-| parameters | description | required | default value |
+| attributes | description | required | default value |
 |-|-|-|-|
 | level | Increase shadow dimensions | false | 4 |
 | shadowColor | Change shadowColor style attribute | false | #000 |
@@ -128,6 +133,11 @@ const MyCustomComponent = () => {
 }
 ```
 
+## 🧪 Example app
+
+To see full app integration example please [refer to here](./examples/ShadowExampleApp/App.tsx).
+
+> ⚠️ To run the app please run here `yarn build` that the @dotmind/rn-shadow-generator npm package be able to link itselfs.
 ## ⚡️ Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
