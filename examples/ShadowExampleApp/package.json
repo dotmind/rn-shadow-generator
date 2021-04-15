@@ -10,7 +10,6 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
-    "@dotmind/rn-shadow-generator": "../../lib",
     "react": "17.0.1",
     "react-native": "0.64.0"
   },
