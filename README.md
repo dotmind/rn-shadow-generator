@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Logo" src="https://github.com/dotmind/rn-shadow-generator/raw/master/examples/dotmind-logo.png" width="100" />
+  <img alt="header" src="https://raw.githubusercontent.com/dotmind/rn-shadow-generator/master/examples/header.jpg" />
 </div>
 <h1 align="center">
   @dotmind/rn-shadow-generator
@@ -22,12 +22,10 @@
   </a>
 </p>
 
-![preview](https://raw.githubusercontent.com/dotmind/rn-shadow-generator/master/examples/preview.png)
-
 ## Menu
 
-- [Menu](#menu)
 - [🚀 Roadmap](#-roadmap)
+- [🔍 Preview](#-preview)
 - [💻 Installation](#-installation)
 - [👷‍♂️ How it's work](#️-how-its-work)
   - [ShadowView usage](#shadowview-usage)
@@ -39,6 +37,11 @@
 ## 🚀 Roadmap
 
 * [ ] Android full compatibility (shadowOffset support)
+
+
+## 🔍 Preview
+
+![preview](https://raw.githubusercontent.com/dotmind/rn-shadow-generator/master/examples/preview.png)
 
 ## 💻 Installation
 
