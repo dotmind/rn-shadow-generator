@@ -3,15 +3,20 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
-    "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start",
+    "android": "npx react-native run-android",
+    "ios": "npx react-native run-ios",
+    "start": "npx react-native start",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "@dotmind/rn-shadow-generator": "../../",
+    "prop-types": "^15.7.2",
     "react": "17.0.1",
-    "react-native": "0.64.0"
+    "react-devtools": "^4.13.1",
+    "react-native": "0.64.0",
+    "react-native-gesture-handler": "^1.10.3",
+    "react-native-material-shadows": "^0.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

@@ -22,6 +22,7 @@ import {
 import {DirectionType, ShadowView} from '@dotmind/rn-shadow-generator';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
+import AndroidCustomShadowView from './AndroidCustomShadowView';
 
 const WhiteLogoDotmind = require('./assets/dotmind-logo-white.png');
 
@@ -175,6 +176,11 @@ const App = () => {
           keyExtractor={(_, index) => index.toString()}
           scrollEnabled={false}
         />
+      </Section>
+      <Section title={'Android Shadow'}>
+        <AndroidCustomShadowView elevation={5} style={{ width: 50, height: 50, backgroundColor: 'red', margin: 20 }}>
+          <Text>Test</Text>
+        </AndroidCustomShadowView>
       </Section>
     </ScrollView>
   );
